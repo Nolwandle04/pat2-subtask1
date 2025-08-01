@@ -31,3 +31,12 @@ int main() {
 for (char c : input) {
     c = toupper(c);
 }
+cout << "\nMorse Code:\n";
+for (char c : input) {
+    c = toupper(c);
+    if (morseCode.find(c) != morseCode.end()) {
+        cout << morseCode[c] << " ";
+    } else {
+        cout << "? ";
+    }
+}
