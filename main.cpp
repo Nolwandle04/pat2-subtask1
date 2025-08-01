@@ -28,3 +28,6 @@ int main() {
 
     return 0;
 }
+for (char c : input) {
+    c = toupper(c);
+}
